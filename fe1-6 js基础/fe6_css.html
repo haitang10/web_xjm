@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="fe6.css">
+    <style media="screen">
+      .green {
+        background: green;
+        color: orange;
+      }
+
+      h1 {
+          background: green;
+          color: yellow;
+      }
+      h2 {
+        margin: 10px;
+        border-width: 10px;
+        pading:30px;
+        width:300px;
+        height:100px;
+
+      }
+      span {
+        color:black;
+        position: relative;
+        top:-14px;
+        font-size: 0.8em;
+      }
+            /*color: white;*/
+      .close {
+        position:absolute;
+        top:0px;
+        right:0px;
+        z-index: 1;
+
+      }
+      .fixed {
+        position:fixed;
+        top:0px;
+        left:0px;
+        width:100%;
+        z-index: 0;
+      }
+        #id-button-test {
+            background: lightblue;
+        }
+    </style>
+
+  </head>
+  <body>
+
+    <h1 style="background:red">内联</h1>
+    <h1 class="a">head 内的 style 标签内的css</h1>
+    <h1 class="green a">E = mc <span> 2</span>爱因斯坦公式</h1>
+    <h2 class="green">
+      class选择器
+      <button class="close" type="button">X</button>
+      <button class="fixed" >皇家赌场</button>
+    </h2>
+    <button clas="test-button" id="id-button-test">按钮1</button>
+    <button clas="test-button">按钮2</button>
+    <div class="">green class div
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+/* 完成的样式 */
+.done {
+    color: gray;
+    text-decoration: line-through;
+    background-color: lightblue;
+}
+
+.hide {
+  display:none;
+}

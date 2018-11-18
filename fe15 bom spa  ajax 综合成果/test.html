@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button class="btn">添加Button按钮</button>
+    <div class="container">
+        <button class="item">hello </button>
+    </div>
+
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    (function bindEvent() {
+        $(".item").click(function() {
+            alert("Hello");
+        });
+    })();
+
+    $(".btn").on("click", function() {
+        $(".container").append("<button class=\"item\">hello</button>")
+    });
+    </script>
+  </body>
+</html>

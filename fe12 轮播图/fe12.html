@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>fe12</title>
+    <link rel="stylesheet" href="fe12.css">
+    <script src='taofun.js'></script>
+  </head>
+  <body>
+    <!-- 1,点击隐藏展开内容-->
+    <div class="gua-1">
+      <div class="gua-menu">
+        <button class="gua-menu-toggle">点击展开详情</button>
+        <div class="gua-menu-content gua-hide">
+          详情
+        </div>
+      </div>
+
+      <div class="gua-menu">
+        <button class="gua-menu-toggle">点击展开详情</button>
+        <div class="gua-menu-content gua-hide">
+          详情
+        </div>
+      </div>
+
+      <div class="gua-menu">
+        <button class="gua-menu-toggle">点击展开详情</button>
+        <div class="gua-menu-content gua-hide">
+          详情
+        </div>
+      </div>
+    </div>
+
+    <div class="gua-2">
+
+      <div class="gua-list">
+         <div class="gua-item">
+           <img src="1.jpg" alt="">
+         </div>
+         <div class="gua-item">
+           <img src="2.jpg" alt="">
+         </div>
+         <div class="gua-item">
+           <img src="3.jpg" alt="">
+         </div>
+      </div>
+
+    </div>
+
+    <div class="gua-3">
+      <!-- data-imgs 是图片总数  是当前显示的图片的下标 ，每次切换图片的时候需要知道当前的图片下标 ，所以要加 data-active-->
+      <div class="gua-slide" data-imgs='7' data-active='0'>
+        <img id='id-gua-image-0' class="gua-slide-image gua-slide-active" src="slideimages\1.jpg" alt="">
+        <img id='id-gua-image-1' class="gua-slide-image" src="slideimages\2.jpg" alt="">
+        <img id='id-gua-image-2' class="gua-slide-image" src="slideimages\3.jpg" alt="">
+        <img id='id-gua-image-3' class="gua-slide-image" src="slideimages\4.jpg" alt="">
+        <img id='id-gua-image-4' class="gua-slide-image" src="slideimages\5.jpg" alt="">
+        <img id='id-gua-image-5' class="gua-slide-image" src="slideimages\6.jpg" alt="">
+        <img id='id-gua-image-6' class="gua-slide-image" src="slideimages\7.jpg" alt="">
+        <button class="gua-slide-button-pre " type="button" name="button">上一张</button>
+        <button class="gua-slide-button-next " type="button" name="button">下一张</button>
+        <div class="gua-slide-indicators">
+          <div id='id-gua-indicator-0' class="gua-slide-indicators-button gua-indicator-white"> </div>
+          <div id='id-gua-indicator-1' class="gua-slide-indicators-button"> </div>
+          <div id='id-gua-indicator-2' class="gua-slide-indicators-button"> </div>
+          <div id='id-gua-indicator-3' class="gua-slide-indicators-button"> </div>
+          <div id='id-gua-indicator-4' class="gua-slide-indicators-button"> </div>
+          <div id='id-gua-indicator-5' class="gua-slide-indicators-button"> </div>
+          <div id='id-gua-indicator-6' class="gua-slide-indicators-button"> </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src='fe12.js'>
+
+    </script>
+
+  </body>
+</html>

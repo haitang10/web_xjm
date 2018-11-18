@@ -1,0 +1,77 @@
+
+  .gua-hide{
+    display: none;
+  }
+  .gua-menu-content {
+    height:100px;
+    border:1px solid red ;
+  }
+  .gua-item {
+    filter: grayscale(100%);
+    width:200px;
+    height: 150px;
+
+  }
+  .gua-item.gua-highlight {
+    filter: grayscale(0);
+    width: 280px;
+    height: 200px;
+    transition: width 1s, height 1s;
+  }
+  .gua-item img {
+    height: 100%;
+    width: 100%;
+  }
+  .gua-item.gua-height img {
+    height: 100%;
+    width: 100%;
+
+  }
+  .gua-slide {
+    position: relative;
+    width: 590px;
+  }
+  .gua-slide-image {
+
+    display: none;
+  }
+  .gua-slide-active {
+    display: inline-block;
+
+  }
+
+  .gua-slide-button-next {
+    position: absolute;
+    opacity: 0.7;
+    height:30px;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%)
+  }
+  .gua-slide-button-pre {
+    position: absolute;
+    opacity: 0.7;
+    height:30px;
+    top: 50%;           /* 垂直居中，相对于自身在Y轴位移一半*/
+    left: 0;
+    transform: translate(0,-50%)
+  }
+
+
+  .gua-slide-indicators {
+    width: 150px;
+    position:absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0)
+  }
+  .gua-slide-indicators-button {
+    display:inline-block;
+    background: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+  }
+  .gua-indicator-white {
+    background: white;
+  }
